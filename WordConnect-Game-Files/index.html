@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Connect - Animal Vocabulary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section id="menu" class="card">
+      <h1>🐾 Word Connect</h1>
+      <p>เกมต่อคำศัพท์ภาษาอังกฤษ หมวดสัตว์</p>
+      <p class="info">ระดับ ม.ต้น • 30 คำศัพท์</p>
+      <button id="startBtn">เริ่มเกม</button>
+    </section>
+
+    <section id="game" class="card hidden">
+      <div class="top">
+        <span>⭐ คะแนน: <b id="score">0</b></span>
+        <span>❤️ ชีวิต: <b id="lives">3</b></span>
+        <span>⏱️ เวลา: <b id="time">30</b></span>
+      </div>
+
+      <div class="progress">ข้อ <span id="questionNo">1</span> / 30</div>
+      <h2 id="meaning">คำแปล</h2>
+      <p>กดตัวอักษรเรียงให้เป็นคำศัพท์ที่ถูกต้อง</p>
+
+      <div id="answer" class="answer"></div>
+      <div id="letters" class="letters"></div>
+
+      <button id="clearBtn" class="secondary">ล้างคำตอบ</button>
+      <p id="message"></p>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h1>🏆 จบเกม!</h1>
+      <p class="big">คะแนนของคุณ</p>
+      <div id="finalScore" class="final-score">0</div>
+      <p id="resultText"></p>
+      <button id="restartBtn">เล่นอีกครั้ง</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
